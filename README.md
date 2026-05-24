@@ -37,7 +37,7 @@ npm run dev
 
 ## Stripe Notes
 
-Payments are for Triple Web Design services only: deposits, full package payments, and monthly maintenance plans. The optional “Stripe payment setup for client websites” add-on is a separate implementation service for client sites.
+Payments are for Triple Web Design services only: deposits, full package payments, and monthly maintenance plans. The optional "Stripe payment setup for client websites" add-on is a separate implementation service for client sites.
 
 The checkout route creates secure server-side Stripe Checkout Sessions and never stores card details on this website.
 
@@ -58,3 +58,7 @@ For local webhook testing:
 ```bash
 stripe listen --forward-to localhost:3000/api/webhooks/stripe
 ```
+
+## Version Safety
+
+Use GitHub commits and Netlify deploy history to roll back safely. See [VERSION_SAFETY.md](VERSION_SAFETY.md) before making major changes.
