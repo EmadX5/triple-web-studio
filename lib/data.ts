@@ -343,7 +343,7 @@ export const faqs = [
   {
     question: "Can you add Stripe payments to my own website?",
     answer:
-      "Yes, as an optional add-on service. Stripe Checkout on this website is for paying Triple Web Studio. Adding Stripe payments to your own business website is a separate implementation service starting from $299."
+      "Yes, as an optional add-on service. Stripe Checkout on this website is for paying Triple Web Design. Adding Stripe payments to your own business website is a separate implementation service starting from $299."
   },
   {
     question: "What do I need to provide before we start?",

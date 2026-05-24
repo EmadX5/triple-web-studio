@@ -30,7 +30,7 @@ export default function ServicesPage() {
           <p className="eyebrow">Services</p>
           <h1>Website design services built around trust, visibility, and leads.</h1>
           <p>
-            Triple Web Studio helps Canadian companies launch modern websites that are easy to
+            Triple Web Design helps Canadian companies launch modern websites that are easy to
             understand, easy to find, and easy to contact from any device.
           </p>
           <div className="cta-row">
@@ -109,7 +109,7 @@ export default function ServicesPage() {
           <div>
             <SectionHeader
               eyebrow="Stripe clarity"
-              title="Payments on this site are for Triple Web Studio services."
+              title="Payments on this site are for Triple Web Design services."
               description="Deposits, full website package payments, and monthly maintenance subscriptions use secure Stripe Checkout so clients can pay the agency online."
             />
           </div>
@@ -119,7 +119,7 @@ export default function ServicesPage() {
                 <CreditCard size={22} aria-hidden="true" />
               </span>
               <h3>Agency payments</h3>
-              <p>Use Stripe Checkout here to pay Triple Web Studio for website work or care plans.</p>
+              <p>Use Stripe Checkout here to pay Triple Web Design for website work or care plans.</p>
             </article>
             <article className="insight-card">
               <span className="icon-tile icon-tile-green">

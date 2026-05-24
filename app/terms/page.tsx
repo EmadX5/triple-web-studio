@@ -3,7 +3,7 @@ import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Terms and Refund Policy",
-  description: "Website service terms and refund policy for Triple Web Studio."
+  description: "Website service terms and refund policy for Triple Web Design."
 };
 
 export default function TermsPage() {
@@ -21,7 +21,7 @@ export default function TermsPage() {
         <div className="container legal-content">
           <h2>Services</h2>
           <p>
-            Triple Web Studio provides website design, redesign, local SEO setup, forms,
+            Triple Web Design provides website design, redesign, local SEO setup, forms,
             integrations, deployment guidance, and maintenance services for businesses.
             Project scope, deliverables, timeline, and revision rounds are confirmed before work
             begins.

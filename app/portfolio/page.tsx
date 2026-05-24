@@ -18,7 +18,7 @@ export default function PortfolioPage() {
           <p className="eyebrow">Portfolio / Work Examples</p>
           <h1>Website directions that feel credible, refined, and ready for customers.</h1>
           <p>
-            These polished placeholder concepts show how Triple Web Studio positions different
+            These polished placeholder concepts show how Triple Web Design positions different
             business types with clear services, strong calls to action, and mobile-first layouts.
           </p>
         </div>

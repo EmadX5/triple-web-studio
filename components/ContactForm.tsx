@@ -61,7 +61,7 @@ export function ContactForm() {
         <strong>Thanks. Your quote request has been received.</strong>
         <p>
           We will review your business details and reply with clear next steps. If your project
-          is urgent, you can also email hello@triplewebstudio.ca.
+          is urgent, you can also email hello@triplewebdesign.com.
         </p>
       </div>
     );

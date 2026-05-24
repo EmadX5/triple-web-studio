@@ -10,7 +10,7 @@ export function getStripe() {
   if (!stripe) {
     stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
       appInfo: {
-        name: "Triple Web Studio"
+        name: "Triple Web Design"
       }
     });
   }

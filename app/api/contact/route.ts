@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
       }
     }
 
-    console.info("New Triple Web Studio quote request:", {
+    console.info("New Triple Web Design quote request:", {
       name: payload.name,
       businessName: payload.businessName,
       email: payload.email,

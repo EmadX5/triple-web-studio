@@ -8,8 +8,8 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.baseUrl),
   title: {
-    default: "Triple Web Studio | Premium Website Design Canada",
-    template: "%s | Triple Web Studio"
+    default: "Triple Web Design | Premium Website Design Canada",
+    template: "%s | Triple Web Design"
   },
   description: siteConfig.description,
   keywords: seoKeywords,
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     locale: "en_CA",
     url: siteConfig.baseUrl,
     siteName: siteConfig.name,
-    title: "Triple Web Studio | Premium Website Design Canada",
+    title: "Triple Web Design | Premium Website Design Canada",
     description: siteConfig.description,
     images: [
       {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Triple Web Studio | Premium Website Design Canada",
+    title: "Triple Web Design | Premium Website Design Canada",
     description: siteConfig.description
   }
 };
@@ -43,7 +43,7 @@ const localBusinessSchema = {
   description: siteConfig.description,
   url: siteConfig.baseUrl,
   email: siteConfig.email,
-  telephone: siteConfig.phone,
+  ...(siteConfig.phone ? { telephone: siteConfig.phone } : {}),
   address: {
     "@type": "PostalAddress",
     addressLocality: "Vancouver",

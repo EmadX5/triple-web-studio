@@ -22,12 +22,12 @@ export function Header() {
   return (
     <header className="site-header">
       <div className="container header-inner">
-        <Link className="brand" href="/" aria-label="Triple Web Studio home" onClick={() => setOpen(false)}>
+        <Link className="brand" href="/" aria-label="Triple Web Design home" onClick={() => setOpen(false)}>
           <span className="brand-mark" aria-hidden="true">
             <MonitorSmartphone size={22} />
           </span>
           <span>
-            <strong>Triple Web Studio</strong>
+            <strong>Triple Web Design</strong>
             <small>Premium web studio</small>
           </span>
         </Link>

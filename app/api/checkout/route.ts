@@ -48,14 +48,14 @@ export async function POST(request: NextRequest) {
       metadata: {
         itemId: item.id,
         serviceName: item.name,
-        source: "triple-web-studio-website"
+        source: "triple-web-design-website"
       },
       subscription_data: item.interval
         ? {
             metadata: {
               itemId: item.id,
               serviceName: item.name,
-              source: "triple-web-studio-website"
+              source: "triple-web-design-website"
             }
           }
         : undefined

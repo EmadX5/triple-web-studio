@@ -36,7 +36,7 @@ export default function HomePage() {
     <>
       <section className="hero">
         <div className="container hero-content">
-          <p className="eyebrow">Triple Web Studio / Vancouver-based, Canada-wide</p>
+          <p className="eyebrow">Triple Web Design / Vancouver-based, Canada-wide</p>
           <h1>Premium Websites for Canadian Brands That Need More Trust, Leads, and Growth</h1>
           <p className="hero-lede">
             We design fast, mobile-friendly, SEO-ready websites for companies that need to look
@@ -231,13 +231,13 @@ export default function HomePage() {
           <SectionHeader
             eyebrow="Testimonials"
             title="Review slots ready for real client proof."
-            description="These are clearly marked placeholders until Triple Web Studio adds verified reviews from completed projects."
+            description="These are clearly marked placeholders until Triple Web Design adds verified reviews from completed projects."
           />
           <div className="testimonial-grid">
             {[
               [
                 "Placeholder testimonial",
-                "Triple Web Studio made our services easier to understand and gave customers a clearer way to request a quote.",
+                "Triple Web Design made our services easier to understand and gave customers a clearer way to request a quote.",
                 "Local contractor"
               ],
               [

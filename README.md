@@ -1,4 +1,4 @@
-# Triple Web Studio
+# Triple Web Design
 
 A premium Next.js website for a Vancouver-based, Canada-wide web design agency.
 
@@ -37,7 +37,7 @@ npm run dev
 
 ## Stripe Notes
 
-Payments are for Triple Web Studio services only: deposits, full package payments, and monthly maintenance plans. The optional “Stripe payment setup for client websites” add-on is a separate implementation service for client sites.
+Payments are for Triple Web Design services only: deposits, full package payments, and monthly maintenance plans. The optional “Stripe payment setup for client websites” add-on is a separate implementation service for client sites.
 
 The checkout route creates secure server-side Stripe Checkout Sessions and never stores card details on this website.
 

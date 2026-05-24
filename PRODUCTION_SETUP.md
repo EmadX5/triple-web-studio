@@ -1,6 +1,6 @@
 # Production Setup Checklist
 
-Follow these steps in order when you are ready to launch Triple Web Studio with real Stripe payments.
+Follow these steps in order when you are ready to launch Triple Web Design with real Stripe payments.
 
 ## 1. Create or finish your Stripe account
 

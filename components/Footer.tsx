@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowRight, Mail, MapPin } from "lucide-react";
 import { siteConfig } from "@/lib/site";
 
 const footerLinks = [
@@ -19,7 +19,7 @@ export function Footer() {
       <div className="container footer-grid">
         <div>
           <Link className="footer-brand" href="/">
-            Triple Web Studio
+            Triple Web Design
           </Link>
           <p>
             Premium websites for Canadian brands that need trust, visibility, and more
@@ -53,15 +53,11 @@ export function Footer() {
               <Mail size={18} aria-hidden="true" />
               <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
             </li>
-            <li>
-              <Phone size={18} aria-hidden="true" />
-              <a href={`tel:${siteConfig.phone.replace(/[^\d+]/g, "")}`}>{siteConfig.phone}</a>
-            </li>
           </ul>
         </div>
       </div>
       <div className="container footer-bottom">
-        <span>© {new Date().getFullYear()} Triple Web Studio. All rights reserved.</span>
+        <span>Copyright {new Date().getFullYear()} Triple Web Design. All rights reserved.</span>
         <span>Secure payments powered by Stripe Checkout.</span>
       </div>
     </footer>

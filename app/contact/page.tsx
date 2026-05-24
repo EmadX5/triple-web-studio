@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 import { SectionHeader } from "@/components/SectionHeader";
 import { siteConfig } from "@/lib/site";
@@ -7,7 +7,7 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact and Free Quote",
   description:
-    "Request a free website design quote from Triple Web Studio for your Canadian business."
+    "Request a free website design quote from Triple Web Design for your Canadian business."
 };
 
 export default function ContactPage() {
@@ -40,10 +40,6 @@ export default function ContactPage() {
               <li>
                 <Mail size={18} aria-hidden="true" />
                 <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
-              </li>
-              <li>
-                <Phone size={18} aria-hidden="true" />
-                <a href={`tel:${siteConfig.phone.replace(/[^\d+]/g, "")}`}>{siteConfig.phone}</a>
               </li>
             </ul>
           </div>

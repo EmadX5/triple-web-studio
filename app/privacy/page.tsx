@@ -3,7 +3,7 @@ import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Privacy policy for Triple Web Studio website visitors and customers."
+  description: "Privacy policy for Triple Web Design website visitors and customers."
 };
 
 export default function PrivacyPage() {
@@ -12,7 +12,7 @@ export default function PrivacyPage() {
       <section className="page-hero">
         <div className="container page-hero-inner">
           <p className="eyebrow">Privacy Policy</p>
-          <h1>How Triple Web Studio handles website inquiries and payment information.</h1>
+          <h1>How Triple Web Design handles website inquiries and payment information.</h1>
           <p>Last updated: May 19, 2026</p>
         </div>
       </section>
@@ -20,7 +20,7 @@ export default function PrivacyPage() {
       <section className="section">
         <div className="container legal-content">
           <p>
-            This Privacy Policy explains how Triple Web Studio collects, uses, and protects
+            This Privacy Policy explains how Triple Web Design collects, uses, and protects
             information submitted through this website.
           </p>
 
@@ -39,7 +39,7 @@ export default function PrivacyPage() {
 
           <h2>Payments</h2>
           <p>
-            Payments are processed through Stripe Checkout. Triple Web Studio does not store credit
+            Payments are processed through Stripe Checkout. Triple Web Design does not store credit
             card details on this website. Stripe may collect payment details according to its own
             privacy and security policies.
           </p>
