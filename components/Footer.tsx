@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Mail, MapPin } from "lucide-react";
+import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
 import { siteConfig } from "@/lib/site";
 
 const footerLinks = [
@@ -52,6 +52,10 @@ export function Footer() {
             <li>
               <Mail size={18} aria-hidden="true" />
               <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
+            </li>
+            <li>
+              <Phone size={18} aria-hidden="true" />
+              <a href={`tel:${siteConfig.phone.replace(/[^\d+]/g, "")}`}>{siteConfig.phone}</a>
             </li>
           </ul>
         </div>

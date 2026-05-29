@@ -3,7 +3,7 @@ export const siteConfig = {
   tagline: "Premium websites for Canadian service brands",
   baseUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://triplewebdesign.com",
   email: "hello@triplewebdesign.com",
-  phone: "",
+  phone: "+1 604 239 3284",
   location: "Vancouver, BC",
   serviceArea: "Canada-wide",
   description:
