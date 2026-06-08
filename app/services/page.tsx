@@ -4,9 +4,9 @@ import {
   ArrowRight,
   CalendarCheck,
   CheckCircle2,
-  CreditCard,
   Globe2,
   MapPin,
+  MessageSquareWarning,
   Search,
   ShieldCheck,
   Wrench
@@ -17,7 +17,7 @@ import { services } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Website Design Services Canada",
   description:
-    "Website design, redesigns, local SEO setup, booking forms, Google Maps, maintenance, and optional Stripe setup for Canadian service brands."
+    "Website design, local SEO setup, booking forms, Google Maps, maintenance, and Google Business Profile support for Canadian service brands."
 };
 
 const icons = [Globe2, Wrench, Search, CalendarCheck, MapPin, ShieldCheck];
@@ -30,8 +30,8 @@ export default function ServicesPage() {
           <p className="eyebrow">Services</p>
           <h1>Website design services built around trust, visibility, and leads.</h1>
           <p>
-            Triple Web Design helps Canadian companies launch modern websites that are easy to
-            understand, easy to find, and easy to contact from any device.
+            Triple Web Design helps Canadian companies launch modern websites that make services,
+            hours, locations, and contact options easy to find from any device.
           </p>
           <div className="cta-row">
             <Link className="button button-primary" href="/contact">
@@ -50,7 +50,7 @@ export default function ServicesPage() {
           <SectionHeader
             eyebrow="Core services"
             title="Everything a premium service website needs to launch with confidence."
-            description="Choose a focused website package, then add the services your business needs for bookings, payments, content, local SEO, or ongoing updates."
+            description="Choose a focused website package, then add the services your business needs for bookings, content, local SEO, Google Business Profile support, or ongoing updates."
           />
           <div className="services-grid">
             {services.map((service, index) => {
@@ -108,32 +108,32 @@ export default function ServicesPage() {
         <div className="container split-grid split-grid-start">
           <div>
             <SectionHeader
-              eyebrow="Stripe clarity"
-              title="Payments on this site are for Triple Web Design services."
-              description="Deposits, full website package payments, and monthly maintenance subscriptions use secure Stripe Checkout so clients can pay the agency online."
+              eyebrow="Website + local presence care"
+              title="We can maintain the website and help keep your Google profile useful."
+              description="Monthly care is for owners who would rather not deal with website updates, profile details, reviews, forms, hosting questions, or confusing dashboards."
             />
           </div>
           <div className="insight-grid">
             <article className="insight-card">
               <span className="icon-tile">
-                <CreditCard size={22} aria-hidden="true" />
+                <Wrench size={22} aria-hidden="true" />
               </span>
-              <h3>Agency payments</h3>
-              <p>Use Stripe Checkout here to pay Triple Web Design for website work or care plans.</p>
+              <h3>Website updates</h3>
+              <p>Small content edits, form checks, uptime checks, hosting coordination, and support when the internet side of things gets annoying.</p>
             </article>
             <article className="insight-card">
               <span className="icon-tile icon-tile-green">
-                <ShieldCheck size={22} aria-hidden="true" />
+                <MapPin size={22} aria-hidden="true" />
               </span>
-              <h3>Secure checkout</h3>
-              <p>Card details are handled by Stripe and are not stored by this website.</p>
+              <h3>Google Business Profile</h3>
+              <p>Hours, services, photos, website links, profile updates, and simple performance snapshots kept easier to manage.</p>
             </article>
             <article className="insight-card">
               <span className="icon-tile icon-tile-red">
-                <Wrench size={22} aria-hidden="true" />
+                <MessageSquareWarning size={22} aria-hidden="true" />
               </span>
-              <h3>Client Stripe setup</h3>
-              <p>Adding Stripe payments to your own website is a separate optional add-on service.</p>
+              <h3>Review alerts</h3>
+              <p>We can watch for low-star reviews, notify you, and help draft professional responses. Google decides what can be removed.</p>
             </article>
           </div>
         </div>

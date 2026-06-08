@@ -33,67 +33,67 @@ export type PaymentItemId =
 export const paymentItems: Record<PaymentItemId, PaymentItem> = {
   "starter-deposit": {
     id: "starter-deposit",
-    name: "Starter Website Deposit",
-    description: "Secure your project start for the Starter Website package.",
-    amount: 30000,
+    name: "Launch Website Deposit",
+    description: "Secure your project start for the Launch Website package.",
+    amount: 50000,
     currency: "cad"
   },
   "business-deposit": {
     id: "business-deposit",
     name: "Business Website Deposit",
     description: "Secure your project start for the Business Website package.",
-    amount: 50000,
+    amount: 75000,
     currency: "cad"
   },
   "premium-deposit": {
     id: "premium-deposit",
-    name: "Premium Growth Website Deposit",
-    description: "Secure your project start for the Premium Growth Website package.",
-    amount: 75000,
+    name: "Growth Website Deposit",
+    description: "Secure your project start for the Growth Website package.",
+    amount: 100000,
     currency: "cad"
   },
   "starter-full": {
     id: "starter-full",
-    name: "Starter Website Full Payment",
-    description: "Full payment for the Starter Website package.",
-    amount: 89900,
+    name: "Launch Website Full Payment",
+    description: "Full payment for the Launch Website package.",
+    amount: 150000,
     currency: "cad"
   },
   "business-full": {
     id: "business-full",
     name: "Business Website Full Payment",
     description: "Full payment for the Business Website package.",
-    amount: 189900,
+    amount: 250000,
     currency: "cad"
   },
   "premium-full": {
     id: "premium-full",
-    name: "Premium Growth Website Full Payment",
-    description: "Full payment for the Premium Growth Website package.",
-    amount: 349900,
+    name: "Growth Website Full Payment",
+    description: "Full payment for the Growth Website package.",
+    amount: 400000,
     currency: "cad"
   },
   "care-basic": {
     id: "care-basic",
-    name: "Care Basic Monthly Maintenance",
-    description: "Monthly website care for light updates and routine checkups.",
-    amount: 5900,
+    name: "Website Care Monthly Maintenance",
+    description: "Monthly website care for hosting coordination, checks, and small updates.",
+    amount: 19900,
     currency: "cad",
     interval: "month"
   },
   "care-growth": {
     id: "care-growth",
-    name: "Care Growth Monthly Maintenance",
-    description: "Monthly website care with analytics review, updates, and priority support.",
-    amount: 9900,
+    name: "Local Care Monthly Maintenance",
+    description: "Monthly website care with Google Business Profile support and review alerts.",
+    amount: 39900,
     currency: "cad",
     interval: "month"
   },
   "care-premium": {
     id: "care-premium",
-    name: "Care Premium Monthly Maintenance",
-    description: "Monthly website care with conversion improvements, SEO monitoring, and integration support.",
-    amount: 19900,
+    name: "Growth Care Monthly Maintenance",
+    description: "Monthly website care with more edit time, GBP support, reporting, and improvements.",
+    amount: 59900,
     currency: "cad",
     interval: "month"
   }
@@ -102,52 +102,53 @@ export const paymentItems: Record<PaymentItemId, PaymentItem> = {
 export const packages: Package[] = [
   {
     id: "starter",
-    name: "Starter Website",
-    price: "$899",
+    name: "Launch Website",
+    price: "from $1,500",
     depositItemId: "starter-deposit",
     fullItemId: "starter-full",
-    bestFor: "New ventures that need a sharp, credible digital presence.",
-    delivery: "7-10 business day delivery",
+    bestFor: "Businesses without a website that need a professional online presence quickly.",
+    delivery: "5-10 business day delivery",
     features: [
-      "Up to 3 pages",
-      "Mobile-responsive design",
+      "Up to 4 pages",
+      "Optimized for phones and tablets",
       "Contact form",
       "Basic SEO setup",
       "Google Maps embed",
       "Click-to-call button",
       "SSL/deployment guidance",
-      "1 revision round"
+      "2 revision rounds"
     ]
   },
   {
     id: "business",
     name: "Business Website",
-    price: "$1,899",
+    price: "from $2,500",
     depositItemId: "business-deposit",
     fullItemId: "business-full",
     badge: "Most Popular",
-    bestFor: "Established service companies that want stronger lead flow.",
-    delivery: "2-3 week delivery",
+    bestFor: "Established local businesses that want stronger trust, service pages, and lead flow.",
+    delivery: "1-2 week delivery",
     features: [
-      "Up to 6 pages",
+      "Up to 7 pages",
       "Custom homepage sections",
       "Service pages",
       "Contact/quote form",
       "Local SEO setup",
       "Google Analytics setup",
       "Google Search Console setup",
+      "Google Business Profile checklist",
       "Performance optimization",
       "2 revision rounds"
     ]
   },
   {
     id: "premium",
-    name: "Premium Growth Website",
-    price: "$3,499",
+    name: "Growth Website",
+    price: "from $4,000",
     depositItemId: "premium-deposit",
     fullItemId: "premium-full",
     bestFor: "Growth-focused companies that want stronger brand impact, conversion, and integrations.",
-    delivery: "30 days post-launch support",
+    delivery: "2-3 week delivery plus 30 days support",
     features: [
       "Up to 10 pages",
       "Premium custom design",
@@ -163,11 +164,12 @@ export const packages: Package[] = [
 ];
 
 export const addOns = [
-  ["Extra page", "$150"],
+  ["Extra page", "$200"],
   ["Logo refresh", "from $299"],
   ["Copywriting", "from $399"],
   ["Stripe payment setup for client websites", "from $299"],
   ["Booking system setup", "from $249"],
+  ["Google Business Profile setup", "from $299"],
   ["Local SEO boost", "from $499"],
   ["E-commerce setup", "from $1,499"]
 ];
@@ -175,21 +177,21 @@ export const addOns = [
 export const maintenancePlans = [
   {
     id: "care-basic" as PaymentItemId,
-    name: "Care Basic",
-    price: "$59/month",
-    description: "Hosting guidance, backups/checkups, small updates."
+    name: "Website Care",
+    price: "$199/month",
+    description: "Hosting coordination, uptime/form checks, basic health checks, and one small update request per month."
   },
   {
     id: "care-growth" as PaymentItemId,
-    name: "Care Growth",
-    price: "$99/month",
-    description: "Monthly updates, analytics review, uptime checks, priority support."
+    name: "Local Care",
+    price: "$399/month",
+    description: "Website Care plus Google Business Profile updates, bad review alerts, response drafts, and a monthly local visibility snapshot."
   },
   {
     id: "care-premium" as PaymentItemId,
-    name: "Care Premium",
-    price: "$199/month",
-    description: "More update time, conversion improvements, SEO monitoring, integration support."
+    name: "Growth Care",
+    price: "$599/month",
+    description: "Local Care plus up to 4 hours of monthly edits, priority support, and ongoing website improvement recommendations."
   }
 ];
 
@@ -197,7 +199,7 @@ export const services = [
   {
     title: "Website Design",
     description:
-      "Clean, fast, mobile-first websites that make your business look credible from the first click."
+      "Clean, fast websites optimized for phones, tablets, and desktops so your business looks credible before customers call."
   },
   {
     title: "Website Redesigns",
@@ -205,9 +207,9 @@ export const services = [
       "Modernize an outdated website with stronger messaging, better structure, and clearer calls to action."
   },
   {
-    title: "Local SEO Setup",
+    title: "Local SEO & GBP Setup",
     description:
-      "Page titles, descriptions, indexing setup, maps, and location signals that help nearby customers find you."
+      "Page titles, descriptions, indexing setup, maps, and Google Business Profile basics that help nearby customers understand you."
   },
   {
     title: "Booking & Contact Forms",
@@ -222,7 +224,7 @@ export const services = [
   {
     title: "Maintenance & Support",
     description:
-      "Monthly care plans for updates, monitoring, improvements, and support after launch."
+      "Monthly care plans for updates, monitoring, Google Business Profile support, and calm help after launch."
   }
 ];
 
@@ -243,7 +245,7 @@ export const processSteps = [
     step: "03",
     title: "Design and Build",
     description:
-      "Your site is designed mobile-first, built for speed, and structured around the actions you want visitors to take."
+      "Your site is built for speed, optimized for mobile, and structured around the actions you want visitors to take."
   },
   {
     step: "04",
@@ -308,12 +310,12 @@ export const faqs = [
   {
     question: "How much does a professional website cost?",
     answer:
-      "Focused professional websites start at $899 for a polished foundation. Lead-focused service websites usually land around $1,899, while larger custom builds with integrations start at $3,499."
+      "Launch websites start at $1,500 CAD. Lead-focused business websites usually start around $2,500 CAD, while larger custom builds with integrations start around $4,000 CAD. Scope, pages, revisions, and launch support are confirmed before work starts."
   },
   {
     question: "How long does it take to launch?",
     answer:
-      "Starter websites usually launch in 7-10 business days after content is ready. Business and Premium projects typically take 2-3 weeks depending on pages, revisions, integrations, and how quickly feedback arrives."
+      "Launch websites usually take 5-10 business days after content is ready. Business and Growth projects typically take 1-3 weeks depending on pages, revisions, integrations, and how quickly feedback arrives."
   },
   {
     question: "Do I own my website?",
@@ -333,17 +335,17 @@ export const faqs = [
   {
     question: "Do you offer monthly maintenance?",
     answer:
-      "Yes. Monthly care plans start at $59/month and can include checkups, small updates, analytics review, uptime checks, SEO monitoring, and integration support."
+      "Yes. Monthly care plans start at $199/month and can include website checks, small updates, analytics review, uptime checks, Google Business Profile support, bad review alerts, and improvement recommendations."
   },
   {
-    question: "Can I pay my deposit online?",
+    question: "Can you help with my Google Business Profile?",
     answer:
-      "Yes. Deposits, full package payments, and monthly maintenance plans can be paid securely through Stripe Checkout on this website."
+      "Yes. We can help keep your profile accurate, update services or photos, monitor new reviews, draft responses, and send simple performance snapshots. We do not promise paid Google rankings."
   },
   {
     question: "Can you add Stripe payments to my own website?",
     answer:
-      "Yes, as an optional add-on service. Stripe Checkout on this website is for paying Triple Web Design. Adding Stripe payments to your own business website is a separate implementation service starting from $299."
+      "Yes, as an optional add-on service. Adding Stripe payments to your own business website is a separate implementation service starting from $299."
   },
   {
     question: "What do I need to provide before we start?",

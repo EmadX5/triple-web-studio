@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Check, ShieldCheck } from "lucide-react";
 import { packages } from "@/lib/data";
-import { CheckoutButton } from "@/components/CheckoutButton";
 
 type PricingCardsProps = {
   preview?: boolean;
@@ -35,18 +34,14 @@ export function PricingCards({ preview = false }: PricingCardsProps) {
             {plan.delivery}
           </div>
 
-          <CheckoutButton itemId={plan.depositItemId} className="button-primary full-width">
-            {plan.id === "starter"
-              ? "Pay $300 Deposit"
-              : plan.id === "business"
-                ? "Pay $500 Deposit"
-                : "Pay $750 Deposit"}
-          </CheckoutButton>
+          <Link className="button button-primary full-width" href="/contact">
+            Get a Clear Quote
+          </Link>
 
           {!preview ? (
-            <CheckoutButton itemId={plan.fullItemId} className="button-secondary full-width" size="small">
-              Pay in Full
-            </CheckoutButton>
+            <Link className="button button-secondary button-small full-width" href="/contact">
+              Confirm Scope
+            </Link>
           ) : null}
         </article>
       ))}

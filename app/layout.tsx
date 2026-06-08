@@ -8,7 +8,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.baseUrl),
   title: {
-    default: "Triple Web Design | Premium Website Design Canada",
+    default: "Triple Web Design | Websites for Canadian Businesses",
     template: "%s | Triple Web Design"
   },
   description: siteConfig.description,
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     locale: "en_CA",
     url: siteConfig.baseUrl,
     siteName: siteConfig.name,
-    title: "Triple Web Design | Premium Website Design Canada",
+    title: "Triple Web Design | Websites for Canadian Businesses",
     description: siteConfig.description,
     images: [
       {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Triple Web Design | Premium Website Design Canada",
+    title: "Triple Web Design | Websites for Canadian Businesses",
     description: siteConfig.description
   }
 };

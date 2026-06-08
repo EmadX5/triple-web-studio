@@ -30,8 +30,9 @@ export default function TermsPage() {
           <h2>Deposits and Payments</h2>
           <p>
             Deposits are used to reserve project time and begin planning. Full package payments and
-            monthly care plan subscriptions may also be paid through Stripe Checkout on this
-            website. Card details are processed by Stripe and are not stored by this website.
+            monthly care plan subscriptions may be paid by approved payment methods or third-party
+            payment links after scope is confirmed. Card details are processed by the payment
+            provider and are not stored by this website.
           </p>
 
           <h2>Client Responsibilities</h2>

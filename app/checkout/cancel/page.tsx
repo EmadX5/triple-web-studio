@@ -4,7 +4,11 @@ import { AlertCircle, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Payment Cancelled",
-  description: "Your Triple Web Design checkout payment was cancelled."
+  description: "Your Triple Web Design checkout payment was cancelled.",
+  robots: {
+    index: false,
+    follow: false
+  }
 };
 
 export default function CheckoutCancelPage() {

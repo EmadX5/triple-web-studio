@@ -19,7 +19,7 @@ export default function PortfolioPage() {
           <h1>Website directions that feel credible, refined, and ready for customers.</h1>
           <p>
             These polished placeholder concepts show how Triple Web Design positions different
-            business types with clear services, strong calls to action, and mobile-first layouts.
+            business types with clear services, strong calls to action, and layouts optimized for mobile.
           </p>
         </div>
       </section>

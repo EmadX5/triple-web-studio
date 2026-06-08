@@ -22,11 +22,11 @@ export function Footer() {
             Triple Web Design
           </Link>
           <p>
-            Premium websites for Canadian brands that need trust, visibility, and more
-            qualified leads.
+            Premium websites for Canadian businesses that need one clear online home, stronger
+            trust, and easier ways for customers to call, book, or request a quote.
           </p>
           <Link className="button button-primary footer-cta" href="/contact">
-            Start Your Website
+            Get a Clear Quote
             <ArrowRight size={18} aria-hidden="true" />
           </Link>
         </div>
@@ -62,7 +62,7 @@ export function Footer() {
       </div>
       <div className="container footer-bottom">
         <span>Copyright {new Date().getFullYear()} Triple Web Design. All rights reserved.</span>
-        <span>Secure payments powered by Stripe Checkout.</span>
+        <span>Clear scope, no surprise fees, optional monthly care.</span>
       </div>
     </footer>
   );

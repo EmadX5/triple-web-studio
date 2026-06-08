@@ -12,7 +12,7 @@ export default function PrivacyPage() {
       <section className="page-hero">
         <div className="container page-hero-inner">
           <p className="eyebrow">Privacy Policy</p>
-          <h1>How Triple Web Design handles website inquiries and payment information.</h1>
+          <h1>How Triple Web Design handles website inquiries and project information.</h1>
           <p>Last updated: May 19, 2026</p>
         </div>
       </section>
@@ -34,14 +34,14 @@ export default function PrivacyPage() {
           <h2>How We Use Information</h2>
           <p>
             We use submitted information to respond to inquiries, prepare quotes, plan website
-            projects, provide support, process payments, and improve our services.
+            projects, provide support, send payment instructions when needed, and improve our services.
           </p>
 
           <h2>Payments</h2>
           <p>
-            Payments are processed through Stripe Checkout. Triple Web Design does not store credit
-            card details on this website. Stripe may collect payment details according to its own
-            privacy and security policies.
+            If a project uses an online payment link or third-party payment processor, Triple Web
+            Design does not store credit card details on this website. Payment providers may collect
+            payment details according to their own privacy and security policies.
           </p>
 
           <h2>Analytics and Site Data</h2>

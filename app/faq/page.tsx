@@ -7,7 +7,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 export const metadata: Metadata = {
   title: "FAQ",
   description:
-    "Answers about website pricing, timelines, ownership, hosting, redesigns, maintenance, online deposits, and Stripe setup."
+    "Answers about website pricing, timelines, ownership, hosting, redesigns, maintenance, Google Business Profile support, and payment setup."
 };
 
 export default function FaqPage() {
@@ -18,7 +18,7 @@ export default function FaqPage() {
           <p className="eyebrow">FAQ</p>
           <h1>Clear answers before you start a website project.</h1>
           <p>
-            Pricing, timelines, ownership, hosting, maintenance, online payments, and what we need
+            Pricing, timelines, ownership, hosting, maintenance, local profile support, and what we need
             from you before design begins.
           </p>
         </div>

@@ -7,7 +7,7 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact and Free Quote",
   description:
-    "Request a free website design quote from Triple Web Design for your Canadian business."
+    "Request a clear website design quote from Triple Web Design for your Canadian business."
 };
 
 export default function ContactPage() {
@@ -18,8 +18,8 @@ export default function ContactPage() {
           <p className="eyebrow">Contact</p>
           <h1>Tell us about your business and the website you need.</h1>
           <p>
-            Share your goals, business type, city, budget range, and the package you are considering.
-            We will reply with practical next steps.
+            Share your goals, business type, city, budget range, and whether you need website care
+            or Google Business Profile support. We will reply with practical next steps.
           </p>
         </div>
       </section>
@@ -28,9 +28,9 @@ export default function ContactPage() {
         <div className="container split-grid split-grid-start">
           <div className="content-stack">
             <SectionHeader
-              eyebrow="Free quote"
+              eyebrow="Clear quote"
               title="Start with a quick project request."
-              description="The more detail you share, the easier it is to recommend the right package, timeline, and add-ons."
+              description="The more detail you share, the easier it is to recommend the right package, timeline, revision scope, and optional monthly care."
             />
             <ul className="contact-list">
               <li>

@@ -4,7 +4,11 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Payment Received",
-  description: "Your Triple Web Design payment was received successfully."
+  description: "Your Triple Web Design payment was received successfully.",
+  robots: {
+    index: false,
+    follow: false
+  }
 };
 
 export default function CheckoutSuccessPage() {

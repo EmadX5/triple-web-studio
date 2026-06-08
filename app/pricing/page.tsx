@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Lock, ShieldCheck } from "lucide-react";
-import { CheckoutButton } from "@/components/CheckoutButton";
+import { ArrowRight, CheckCircle2, ClipboardCheck, ShieldCheck } from "lucide-react";
 import { PricingCards } from "@/components/PricingCards";
 import { SectionHeader } from "@/components/SectionHeader";
 import { addOns, maintenancePlans } from "@/lib/data";
@@ -9,7 +8,7 @@ import { addOns, maintenancePlans } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Transparent pricing for premium website design, redesigns, add-ons, deposits, full payments, and monthly maintenance plans."
+    "Transparent pricing for website design, redesigns, add-ons, revision rounds, monthly maintenance, and Google Business Profile support."
 };
 
 export default function PricingPage() {
@@ -18,10 +17,10 @@ export default function PricingPage() {
       <section className="page-hero">
         <div className="container page-hero-inner">
           <p className="eyebrow">Pricing</p>
-          <h1>Clear website design packages with secure Stripe payment options.</h1>
+          <h1>Clear website packages with no surprise fees.</h1>
           <p>
-            Compare packages, pay a deposit to start, pay in full, or subscribe to a monthly care
-            plan after launch.
+            Websites start at $1,500 CAD. Scope, pages, revisions, timeline, and optional monthly
+            care are confirmed before work starts.
           </p>
         </div>
       </section>
@@ -29,10 +28,10 @@ export default function PricingPage() {
       <section className="section">
         <div className="container">
           <div className="payment-note">
-            <strong>Stripe clarification:</strong> payments on this website are for Triple Web
-            Studio services only. Customers use Stripe here to pay the agency for deposits, full
-            package payments, and monthly maintenance plans. Adding Stripe payments to a client
-            website is available as a separate optional add-on.
+            <strong>Revision rule:</strong> every website includes clear revision rounds before
+            launch. Revisions cover consolidated feedback on wording, images, colors, layout, and
+            calls to action. New pages, new features, or major direction changes are quoted
+            separately before work continues.
           </div>
           <PricingCards />
         </div>
@@ -60,8 +59,8 @@ export default function PricingPage() {
         <div className="container">
           <SectionHeader
             eyebrow="Monthly maintenance"
-            title="Keep your website healthy after launch."
-            description="Choose a monthly care plan for updates, monitoring, support, and ongoing improvements."
+            title="If websites and Google stress you out, we can maintain things for you."
+            description="Choose a care plan for updates, monitoring, Google Business Profile support, bad review alerts, and ongoing help after launch."
           />
           <div className="maintenance-grid">
             {maintenancePlans.map((plan) => (
@@ -69,9 +68,9 @@ export default function PricingPage() {
                 <h3>{plan.name}</h3>
                 <strong>{plan.price}</strong>
                 <p>{plan.description}</p>
-                <CheckoutButton itemId={plan.id} className="button-primary full-width">
-                  Subscribe
-                </CheckoutButton>
+                <Link className="button button-primary full-width" href="/contact">
+                  Ask About This Plan
+                </Link>
               </article>
             ))}
           </div>
@@ -82,9 +81,9 @@ export default function PricingPage() {
         <div className="container split-grid split-grid-start">
           <div>
             <SectionHeader
-              eyebrow="Secure checkout"
-              title="Pay online without sending card details through the website."
-              description="Checkout Sessions are created server-side. Stripe handles the payment page, card processing, and subscription billing."
+              eyebrow="Clear scope"
+              title="You know what is included before the project starts."
+              description="We confirm pages, timeline, revision rounds, launch support, and monthly care options upfront so the project does not drift into surprise fees."
             />
             <div className="cta-row">
               <Link className="button button-primary" href="/contact">
@@ -95,19 +94,19 @@ export default function PricingPage() {
           </div>
           <div className="outcome-grid">
             <article className="outcome-card">
-              <Lock size={24} aria-hidden="true" />
-              <h3>No stored card details</h3>
-              <p>Credit card data is processed by Stripe, not saved on this site.</p>
+              <ClipboardCheck size={24} aria-hidden="true" />
+              <h3>Scope confirmed</h3>
+              <p>Pages, features, revision rounds, and launch steps are agreed before work begins.</p>
             </article>
             <article className="outcome-card">
               <ShieldCheck size={24} aria-hidden="true" />
-              <h3>Webhook confirmation</h3>
-              <p>Completed checkouts trigger a server webhook for payment confirmation.</p>
+              <h3>No ranking promises</h3>
+              <p>Google visibility depends on many factors. We keep your site and profile accurate, active, and easier to trust.</p>
             </article>
             <article className="outcome-card">
               <CheckCircle2 size={24} aria-hidden="true" />
-              <h3>Clear next steps</h3>
-              <p>After payment, clients are directed to a success page with project-start guidance.</p>
+              <h3>Optional care</h3>
+              <p>Host it yourself after launch, or keep us on monthly care for updates and support.</p>
             </article>
           </div>
         </div>

@@ -4,18 +4,19 @@ import { useState } from "react";
 import { Send } from "lucide-react";
 
 const packageOptions = [
-  "Starter Website",
+  "Launch Website",
   "Business Website",
-  "Premium Growth Website",
-  "Monthly Maintenance",
+  "Growth Website",
+  "Website Care",
+  "Local Care with Google Business Profile support",
   "Not sure yet"
 ];
 
 const budgetOptions = [
-  "$899-$1,500",
   "$1,500-$2,500",
   "$2,500-$4,000",
   "$4,000+",
+  "Monthly care only",
   "Need guidance"
 ];
 
@@ -100,7 +101,7 @@ export function ContactForm() {
         </label>
         <label>
           Package interested in
-          <select name="packageInterest" defaultValue="Business Website" required>
+          <select name="packageInterest" defaultValue="Launch Website" required>
             {packageOptions.map((option) => (
               <option key={option}>{option}</option>
             ))}
@@ -120,7 +121,7 @@ export function ContactForm() {
         <textarea
           name="message"
           rows={6}
-          placeholder="Tell us what you need your website to do."
+          placeholder="Tell us what your business does, whether you already have a website, and what customers should do next: call, book, visit, or request a quote."
           required
         />
       </label>
@@ -129,7 +130,7 @@ export function ContactForm() {
 
       <button className="button button-primary" type="submit" disabled={loading}>
         <Send size={18} aria-hidden="true" />
-        {loading ? "Sending..." : "Request Free Quote"}
+        {loading ? "Sending..." : "Request Clear Quote"}
       </button>
     </form>
   );

@@ -22,11 +22,11 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { businessTypes, services } from "@/lib/data";
 
 const trustItems = [
-  { label: "Mobile-first design", icon: Smartphone },
+  { label: "Optimized for mobile", icon: Smartphone },
   { label: "SEO setup included", icon: Search },
-  { label: "Stripe payments accepted", icon: CreditCard },
+  { label: "Starting at $1,500", icon: CreditCard },
   { label: "Fast launch", icon: Timer },
-  { label: "No hidden fees", icon: ShieldCheck }
+  { label: "No surprise fees", icon: ShieldCheck }
 ];
 
 const serviceIcons = [Globe2, Wrench, Search, CalendarCheck, MapPin, ClipboardCheck];
@@ -37,10 +37,10 @@ export default function HomePage() {
       <section className="hero">
         <div className="container hero-content">
           <p className="eyebrow">Triple Web Design / Vancouver-based, Canada-wide</p>
-          <h1>Premium Websites for Canadian Brands That Need More Trust, Leads, and Growth</h1>
+          <h1>Customers search first. Give them a website worth trusting.</h1>
           <p className="hero-lede">
-            We design fast, mobile-friendly, SEO-ready websites for companies that need to look
-            established, get found on Google, and turn visitors into qualified inquiries.
+            We build fast, mobile-friendly websites for businesses that do not want customers
+            guessing from scattered Google, Facebook, or directory listings.
           </p>
           <div className="hero-actions">
             <Link className="button button-primary" href="/contact">
@@ -53,16 +53,16 @@ export default function HomePage() {
           </div>
           <div className="hero-proof" aria-label="Agency proof points">
             <div>
-              <strong>Clear</strong>
-              <span>Transparent project pricing</span>
+              <strong>76%</strong>
+              <span>of nearby mobile searches lead to a visit within a day</span>
             </div>
             <div>
-              <strong>2-3 wks</strong>
-              <span>Typical business launch window</span>
+              <strong>28%</strong>
+              <span>of those nearby searches result in a purchase</span>
             </div>
             <div>
-              <strong>24/7</strong>
-              <span>Quote forms that keep working</span>
+              <strong>$1,500</strong>
+              <span>starting price with scope confirmed upfront</span>
             </div>
           </div>
         </div>
@@ -89,8 +89,8 @@ export default function HomePage() {
           <div className="content-stack">
             <SectionHeader
               eyebrow="The online trust gap"
-            title="Customers search first. A weak website quietly costs you trust."
-            description="Before someone calls, books, visits, or requests a quote, they usually check your company online. If your website feels dated, slow, or unclear, confidence drops before the conversation starts."
+              title="No website means customers have to piece your business together."
+              description="Before someone calls, books, visits, or requests a quote, they usually check your company online. A professional website gives them one clear place to understand your services, trust your business, and take the next step."
             />
             <ul className="check-list">
               <li>
@@ -99,7 +99,7 @@ export default function HomePage() {
               </li>
               <li>
                 <CheckCircle2 size={18} aria-hidden="true" />
-                Clear service pages help local customers understand what you do quickly.
+                Clear service pages help local customers understand what you do, where you work, and how to reach you.
               </li>
               <li>
                 <CheckCircle2 size={18} aria-hidden="true" />
@@ -120,7 +120,7 @@ export default function HomePage() {
         <div className="container">
           <SectionHeader
             eyebrow="What we build"
-            title="Strategic website services for companies that need real momentum."
+            title="Strategic websites for businesses that need one clear online home."
             description="From first websites to full redesigns, every page is planned around trust, speed, search visibility, and the next action a customer should take."
           />
           <div className="services-grid">
@@ -175,7 +175,7 @@ export default function HomePage() {
           <SectionHeader
             eyebrow="Pricing preview"
             title="Clear packages for the stage your company is in."
-            description="Start with a deposit through Stripe Checkout, or compare full package options on the pricing page."
+            description="Websites start at $1,500 CAD. Scope, pages, revisions, launch support, and optional maintenance are confirmed before work starts."
           />
           <PricingCards preview />
         </div>
@@ -229,31 +229,31 @@ export default function HomePage() {
       <section className="section">
         <div className="container">
           <SectionHeader
-            eyebrow="Testimonials"
-            title="Review slots ready for real client proof."
-            description="These are clearly marked placeholders until Triple Web Design adds verified reviews from completed projects."
+            eyebrow="After launch"
+            title="Websites and Google profiles can be stressful. We can handle the upkeep."
+            description="If you do not want to manage updates, reviews, forms, hosting questions, or Google Business Profile details yourself, monthly care keeps the important pieces watched."
           />
           <div className="testimonial-grid">
             {[
               [
-                "Placeholder testimonial",
-                "Triple Web Design made our services easier to understand and gave customers a clearer way to request a quote.",
-                "Local contractor"
+                "Website care",
+                "Small updates, form checks, hosting coordination, uptime checks, and practical support when something online feels confusing.",
+                "from $199/month"
               ],
               [
-                "Placeholder testimonial",
-                "The new website feels professional, loads fast on mobile, and finally matches the quality of our business.",
-                "Salon owner"
+                "Google Business Profile",
+                "Profile updates, service edits, photo guidance, bad review alerts, and response drafts so your local presence stays active.",
+                "from $399/month"
               ],
               [
-                "Placeholder testimonial",
-                "We appreciated the transparent pricing, simple process, and help getting our website launched properly.",
-                "Clinic manager"
+                "Honest local visibility",
+                "We help keep your information accurate and easy to trust. We do not promise paid Google rankings or fake review shortcuts.",
+                "clear reporting"
               ]
             ].map(([label, quote, person]) => (
               <article className="testimonial-card" key={quote}>
                 <span className="placeholder-label">{label}</span>
-                <p>“{quote}”</p>
+                <p>{quote}</p>
                 <strong>{person}</strong>
               </article>
             ))}
@@ -268,16 +268,16 @@ export default function HomePage() {
             <h2>Start with a clear quote and a website plan that fits your business.</h2>
             <p>
               Tell us what you do, where you serve customers, and what your website needs to help
-              with. We will reply with practical next steps.
+              with. We will reply with practical next steps, clear pricing, and no surprise fees.
             </p>
           </div>
           <div className="cta-row">
             <Link className="button button-primary" href="/contact">
-              Start Your Website
+              Get a Clear Quote
               <ArrowRight size={18} aria-hidden="true" />
             </Link>
             <Link className="button button-ghost" href="/contact">
-              Book Free Call
+              Request a Call
             </Link>
           </div>
         </div>

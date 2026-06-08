@@ -9,8 +9,6 @@ const routes = [
   "/process",
   "/faq",
   "/contact",
-  "/checkout/success",
-  "/checkout/cancel",
   "/privacy",
   "/terms"
 ];

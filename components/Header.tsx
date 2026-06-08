@@ -9,7 +9,7 @@ const navItems = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/pricing", label: "Pricing" },
-  { href: "/portfolio", label: "Work" },
+  { href: "/portfolio", label: "Portfolio" },
   { href: "/process", label: "Process" },
   { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" }
@@ -28,7 +28,7 @@ export function Header() {
           </span>
           <span>
             <strong>Triple Web Design</strong>
-            <small>Premium web studio</small>
+            <small>Websites + local presence</small>
           </span>
         </Link>
 
@@ -46,7 +46,7 @@ export function Header() {
 
         <div className="header-actions">
           <Link className="button button-small button-primary header-cta" href="/contact">
-            Start Project
+            Get Quote
             <ArrowRight size={16} aria-hidden="true" />
           </Link>
           <button
@@ -75,7 +75,7 @@ export function Header() {
               </Link>
             ))}
             <Link className="button button-primary" href="/contact" onClick={() => setOpen(false)}>
-              Start Your Project
+              Get a Clear Quote
               <ArrowRight size={18} aria-hidden="true" />
             </Link>
           </div>
