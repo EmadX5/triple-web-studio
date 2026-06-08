@@ -3,12 +3,12 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, ClipboardCheck, ShieldCheck } from "lucide-react";
 import { PricingCards } from "@/components/PricingCards";
 import { SectionHeader } from "@/components/SectionHeader";
-import { addOns, maintenancePlans } from "@/lib/data";
+import { maintenancePlans } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Transparent pricing for website design, redesigns, add-ons, revision rounds, monthly maintenance, and Google Business Profile support."
+    "Transparent pricing for website design, revision rounds, monthly maintenance, and Google Business Profile support."
 };
 
 export default function PricingPage() {
@@ -34,24 +34,6 @@ export default function PricingPage() {
             separately before work continues.
           </div>
           <PricingCards />
-        </div>
-      </section>
-
-      <section className="section section-paper">
-        <div className="container">
-          <SectionHeader
-            eyebrow="Add-ons"
-            title="Add only what your business needs."
-            description="Use these as planning ranges. Your quote will confirm scope, timeline, and exact inclusions before work starts."
-          />
-          <div className="addon-grid">
-            {addOns.map(([name, price]) => (
-              <div className="addon-item" key={name}>
-                <span>{name}</span>
-                <strong>{price}</strong>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 

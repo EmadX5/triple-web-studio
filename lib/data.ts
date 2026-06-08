@@ -107,7 +107,7 @@ export const packages: Package[] = [
     depositItemId: "starter-deposit",
     fullItemId: "starter-full",
     bestFor: "Businesses without a website that need a professional online presence quickly.",
-    delivery: "5-10 business day delivery",
+    delivery: "Launch within 1 week after content approval",
     features: [
       "Up to 4 pages",
       "Optimized for phones and tablets",
@@ -127,7 +127,7 @@ export const packages: Package[] = [
     fullItemId: "business-full",
     badge: "Most Popular",
     bestFor: "Established local businesses that want stronger trust, service pages, and lead flow.",
-    delivery: "1-2 week delivery",
+    delivery: "Launch within 1 week after content approval",
     features: [
       "Up to 7 pages",
       "Custom homepage sections",
@@ -148,7 +148,7 @@ export const packages: Package[] = [
     depositItemId: "premium-deposit",
     fullItemId: "premium-full",
     bestFor: "Growth-focused companies that want stronger brand impact, conversion, and integrations.",
-    delivery: "2-3 week delivery plus 30 days support",
+    delivery: "Launch within 1 week after content approval",
     features: [
       "Up to 10 pages",
       "Premium custom design",
@@ -161,17 +161,6 @@ export const packages: Package[] = [
       "3 revision rounds"
     ]
   }
-];
-
-export const addOns = [
-  ["Extra page", "$200"],
-  ["Logo refresh", "from $299"],
-  ["Copywriting", "from $399"],
-  ["Stripe payment setup for client websites", "from $299"],
-  ["Booking system setup", "from $249"],
-  ["Google Business Profile setup", "from $299"],
-  ["Local SEO boost", "from $499"],
-  ["E-commerce setup", "from $1,499"]
 ];
 
 export const maintenancePlans = [
@@ -315,7 +304,7 @@ export const faqs = [
   {
     question: "How long does it take to launch?",
     answer:
-      "Launch websites usually take 5-10 business days after content is ready. Business and Growth projects typically take 1-3 weeks depending on pages, revisions, integrations, and how quickly feedback arrives."
+      "Most standard websites can launch within 1 week after content, access, and approval are ready. Larger custom integrations or major scope changes are confirmed before work starts so the timeline stays clear."
   },
   {
     question: "Do I own my website?",
